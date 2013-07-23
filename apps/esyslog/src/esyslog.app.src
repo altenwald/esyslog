@@ -1,0 +1,13 @@
+{application, esyslog, [
+    {description, "esyslog server"},
+    {vsn, git},
+    {registered, []},
+    {applications, [
+        kernel,
+        stdlib,
+        lager,
+        exmpp
+    ]},
+    {mod, {esyslog_app, []}},
+    {env, []}
+]}.
